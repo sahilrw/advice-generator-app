@@ -1,0 +1,66 @@
+* {
+    font-family: "Manrope", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: hsl(218, 23%, 16%);
+    min-height: 100vh;
+
+    /* centering a div */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    position: relative;
+    width: 500px;
+    background: hsl(217, 19%, 24%);
+    border-radius: 12px;
+}
+.container {
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    color: hsl(150, 100%, 66%);
+    font-size: 12px;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+}
+
+q {
+    color: hsl(193, 38%, 86%);
+    font-size: 24px;
+}
+
+button {
+    height: 50px;
+    padding: 12px;
+    background: hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30px;
+    cursor: pointer;
+}
+
+button:hover{
+    filter: drop-shadow(0 0 0.75rem hsl(150, 100%, 66%));
+    transition: all 0.2s ease;
+}
+
+@media screen and (max-width:500px) {
+    .advice-card{
+        width: 350px;
+    } 
+}
